@@ -62,6 +62,28 @@
   ]
 ]
 
+#matrix-slide(columns: (1fr, 2fr, 2fr), rows: (1fr, 1fr))[
+  Online Service
+][
+  - GitHub
+  - GitLab
+  #image("./img/github_logo.png", width: 50%)
+][
+  - Youtube
+  - DailyMotion
+  - AtoPlay
+  #image("./img/youtube_logo.png", width: 50%)
+][
+  Local Application
+][
+  - Git
+  #image(".\img\Git-Logo-2Color.svg", width: 50%)
+][
+  - VLC Player
+  - Windows Media Player
+  #image(".\img\vlc_player.png", width: 50%)
+]
+
 #accent-focus-slide()[
   Why?
 ]
