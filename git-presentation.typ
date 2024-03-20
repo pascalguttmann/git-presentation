@@ -260,5 +260,48 @@
 
 #accent-focus-slide()[
   = Live Demo !
-    - more Poems and Code
+    - More Poems and Code
+]
+
+#slide(title: [Merging])[
+  #side-by-side(columns: (1fr, 2fr))[
+    #def-block[
+      = Merge \
+        - combining branches
+    ]
+  ][
+    #image("./img/code-poem.svg")
+  ]
+]
+
+#slide(title: [Merging])[
+  #side-by-side(columns: (1fr, 1fr))[
+    ```bash
+    git switch main
+
+    # get changes from 'more_peoms' into main
+    git merge more_poems
+    ```
+  ][
+    #image("./img/poems-ff-merge.svg")
+  ]
+]
+
+#slide(title: [Merging])[
+  #side-by-side(columns: (1fr, 1fr))[
+    ```bash
+    git switch main
+
+    # get changes from 'more_code' into main
+    git merge more_code
+    ```
+  ][
+    #image("./img/code-merge.svg")
+  ]
+]
+
+#accent-focus-slide()[
+  = Live Demo !
+    - Merging Poems and Code
+    - Merge conflict
 ]
