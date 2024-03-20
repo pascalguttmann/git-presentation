@@ -116,8 +116,9 @@
     #def-block[
       = Repository \
         - `.git` directory
-        - stores tracked files
-        - stores all versions of files
+          - tracked files
+          - all versions of files
+          - meta data
     ]
   ][
     ```bash
@@ -130,12 +131,13 @@
 #slide(title: [Commits and Snapshots])[
   #side-by-side(columns: (1fr, 2fr))[
     #def-block[
-      = Snapshot \
-        - "State of a file"
-    ]
-    #def-block[
       = Commit \
         - "Collection of Snapshots"
+    ]
+    #def-block[
+      = Snapshot \
+        - "State of a file"
+        - logical child element of `commit`
     ]
   ][
     #image(".\img\snapshots.png")
