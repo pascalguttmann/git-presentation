@@ -170,3 +170,8 @@
   git log --patch # log + "patch" (changes)
   ```
 ]
+
+#accent-focus-slide()[
+  = Live Demo !
+    - Poems and Code
+]
