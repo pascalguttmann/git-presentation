@@ -127,3 +127,17 @@
   ]
 ]
 
+#slide(title: [Commits and Snapshots])[
+  #side-by-side(columns: (1fr, 2fr))[
+    #def-block[
+      = Snapshot \
+        - "State of a file"
+    ]
+    #def-block[
+      = Commit \
+        - "Collection of Snapshots"
+    ]
+  ][
+    #image(".\img\snapshots.png")
+  ]
+]
