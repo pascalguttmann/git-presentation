@@ -85,7 +85,9 @@
 ]
 
 #accent-focus-slide()[
-  Why?
+  = Git
+  - local
+  - distributed
 ]
 
 #slide(title: [Slide title], new-section: [The section])[
