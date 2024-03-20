@@ -29,7 +29,6 @@
   fill: luma(240),
   width: 100%,
   inset: 0.5em,
-  outset: 0.5em,
   radius: 0.5em,
 )
 
@@ -174,4 +173,92 @@
 #accent-focus-slide()[
   = Live Demo !
     - Poems and Code
+]
+
+#slide(title: [Branching])[
+  #side-by-side(columns: (1fr, 2fr))[
+    #def-block[
+      = Branch \
+        - history of commits
+        - can be named
+        - can diverge
+    ]
+    ```bash
+    # view branches
+    git branch
+    ```
+  ][
+    #image("./img/head-to-master-no-testing.png")
+  ]
+]
+
+#slide(title: [Branching])[
+  #side-by-side(columns: (1fr, 2fr))[
+    ```bash
+    # create branch testing
+    git branch testing
+    ```
+  ][
+    #image("./img/head-to-master.png")
+  ]
+]
+
+#slide(title: [Branching])[
+  #side-by-side(columns: (1fr, 2fr))[
+    ```bash
+    # switch to branch testing
+    git switch testing
+    ```
+  ][
+    #image("./img/head-to-testing.png")
+  ]
+]
+
+#slide(title: [Branching])[
+  #side-by-side(columns: (1fr, 2fr))[
+    ```bash
+    # commit to branch testing
+    git commit -a -m "My experiments"
+    ```
+  ][
+    #image("./img/advance-testing.png")
+  ]
+]
+
+#slide(title: [Branching])[
+  #side-by-side(columns: (1fr, 2fr))[
+    ```bash
+    # switch to branch master
+    git switch master
+    ```
+  ][
+    #image("./img/checkout-master.png")
+  ]
+]
+
+#slide(title: [Branching])[
+  #side-by-side(columns: (1fr, 2fr))[
+    ```bash
+    # commit to branch master
+    git commit -a -m "My other changes"
+    ```
+  ][
+    #image("./img/advance-master.png")
+  ]
+]
+
+#slide(title: [Branching])[
+  #side-by-side(columns: (1fr, 2fr))[
+    ```bash
+    # commit to branch master
+    git commit -a -m "My other changes"
+    ```
+  ][
+    #image("./img/advance-master.png")
+  ]
+]
+
+#accent-focus-slide()[
+  = Live Demo !
+    - more Poems and Code
 ]
