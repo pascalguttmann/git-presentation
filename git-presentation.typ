@@ -13,15 +13,16 @@
 #let accent-focus-slide(body) = focus-slide(background-color: accent-color)[#body]
 #let def-block(body) = block(
   breakable: false,
+  width: 100%,
   fill: accent-color,
   inset: 0.5em,
-  outset: 0.5em,
+  radius: 0.5em,
   )[#body]
 
 #show raw.where(block: false): box.with(
   fill: luma(240),
-  baseline: 25%,
-  height: 1.25em,
+  inset: (x: 0.25em, y: 0em),
+  outset: (y: 0.25em),
   radius: 0.25em,
 )
 #show raw.where(block: true): block.with(
