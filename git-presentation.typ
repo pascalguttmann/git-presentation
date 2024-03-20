@@ -90,20 +90,3 @@
   - distributed
 ]
 
-#slide(title: [Slide title], new-section: [The section])[
-  #lorem(40)
-]
-
-#slide(title: [New Slide title])[
-  A new slide!
-]
-
-#focus-slide(background-color: accent-color)[
-  *Another variant with an image in background...*
-]
-
-#matrix-slide[
-  left
-][
-  right
-]
