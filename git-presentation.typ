@@ -143,3 +143,30 @@
     #image(".\img\snapshots.png")
   ]
 ]
+
+#slide(title: [Staging and Committing])[
+  #image("./img/lifecycle.png")
+]
+
+#slide(title: [Staging and Committing])[
+  ```bash
+  git add newFile.txt # adding an untracked file
+  git add modifiedFile.txt # staging a modified file
+  git add . # adding / staging all files
+
+  git commit -m "My commit message here" # committing
+  ```
+]
+
+#slide(title: [Staging and Committing])[
+  ```bash
+  git status # observing the status of the staging area
+
+  git diff # differences (modified <-> unmodified)
+  git diff --staged # differences (staged <-> unmodified)
+
+  git log # log of commits
+  git log --graph # log + "commit graph"
+  git log --patch # log + "patch" (changes)
+  ```
+]
