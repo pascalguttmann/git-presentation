@@ -18,7 +18,7 @@
   short-title: title,
   short-date: date,
   color-a: accent-color, //main decoration (headings, footer)
-  color-b: accent-color, //accent color (footer line)
+  color-b: rgb("#808080"), //accent color (footer line)
   //color-c: rgb("#FBFEF9"),  //secondary accent (header background)
   progress-bar: true,
 )
