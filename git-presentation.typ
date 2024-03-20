@@ -34,7 +34,7 @@
   // logo: image("dummy-logo.png", width: 60mm)
 )
 
-#slide(title: smallcaps("A Sincere Confession"), new-section: [Why Git?])[
+#slide(title: [A Sincere Confession], new-section: [Why Git?])[
   #side-by-side(columns: (1fr, 2fr))[
     I have been there.
 
