@@ -11,6 +11,26 @@
 
 #let accent-color = rgb("#03B670")
 #let accent-focus-slide(body) = focus-slide(background-color: accent-color)[#body]
+#let def-block(body) = block(
+  breakable: false,
+  fill: accent-color,
+  inset: 0.5em,
+  outset: 0.5em,
+  )[#body]
+
+#show raw.where(block: false): box.with(
+  fill: luma(240),
+  baseline: 25%,
+  height: 1.25em,
+  radius: 0.25em,
+)
+#show raw.where(block: true): block.with(
+  fill: luma(240),
+  width: 100%,
+  inset: 0.5em,
+  outset: 0.5em,
+  radius: 0.5em,
+)
 
 #set align(horizon)
 
@@ -88,5 +108,21 @@
   = Git
   - local
   - distributed
+]
+
+#slide(title: [Repository], new-section: [Git Basics])[
+  #side-by-side(columns: (1fr, 1fr))[
+    #def-block[
+      = Repository \
+        - `.git` directory
+        - stores tracked files
+        - stores all versions of files
+    ]
+  ][
+    ```bash
+    # initialize a new (empty) repository
+    git init
+    ```
+  ]
 ]
 
