@@ -12,6 +12,8 @@
 #let accent-color = rgb("#03B670")
 #let accent-focus-slide(body) = focus-slide(background-color: accent-color)[#body]
 
+#set align(horizon)
+
 #show: university-theme.with(
   aspect-ratio: "16-9",
   short-author: author,
@@ -31,6 +33,34 @@
   institution-name: institution-name,
   // logo: image("dummy-logo.png", width: 60mm)
 )
+
+#slide(title: smallcaps("A Sincere Confession"), new-section: [Why Git?])[
+  #side-by-side(columns: (1fr, 2fr))[
+    I have been there.
+
+    You too? #emoji.eyes
+  ][
+    #image("./img/suffix_versioning.png")
+  ]
+]
+
+#slide(title: [There is Hope!])[
+  #side-by-side[
+    - Version Control Systems (VCS)
+      - Git
+      - Subversion
+      - Mercurial
+      - Bitkeeper
+      - ...
+  ][
+    #figure(
+      image(".\img\linus_torvalds.jpeg", height: 75%),
+      caption: [Linus Torvalds
+      #footnote[Linuxmag.com, December 2002
+      https://upload.wikimedia.org/wikipedia/commons/6/69/Linus_Torvalds.jpeg]],
+    ) <img_linus_torvalds>
+  ]
+]
 
 #accent-focus-slide()[
   Why?
