@@ -373,3 +373,23 @@
   = Live Demo !
     - Repositories for Everyone
 ]
+
+#accent-focus-slide()[
+  = GitHub
+    - Hosting Git Server Online
+    - Collaboration Features
+]
+
+#slide(title: [Pull Requests])[
+  #side-by-side(columns: (1fr, 2fr))[
+    #def-block()[
+      = Pull Request \
+        - Request to merge changes
+        - Review
+    ]
+  ][
+    #align(center)[
+      #image("./img/github-pr.png")
+    ]
+  ]
+]
