@@ -304,7 +304,7 @@
 #accent-focus-slide()[
   = Live Demo !
     - Merging Poems and Code
-    - Merge conflict
+    - Merge Conflict
 ]
 
 #slide(title: [Decentralized Multi-Repository Git])[
