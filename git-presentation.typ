@@ -297,6 +297,10 @@
   ]
 ]
 
+#slide(title: [Gitflow])[
+  #image("./img/git-flow.svg")
+]
+
 #accent-focus-slide()[
   = Live Demo !
     - Merging Poems and Code
