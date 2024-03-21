@@ -306,3 +306,70 @@
     - Merging Poems and Code
     - Merge conflict
 ]
+
+#slide(title: [Decentralized Multi-Repository Git])[
+  #side-by-side(columns: (1fr, 2fr))[
+    #def-block[
+      = Remote \
+        - upstream repository
+        - external (web or local)
+    ]
+    ```bash
+    # Clone an existing repo
+    git clone <repository>
+    ```
+  ][
+    #image("./img/remote-branches-1.png")
+  ]
+]
+
+#slide(title: [Decentralized Multi-Repository Git])[
+  #side-by-side(columns: (1fr, 2fr))[
+    ```bash
+    # do work
+    git commit
+
+    # colleagues do work in remote
+    ```
+  ][
+    #image("./img/remote-branches-2.png")
+  ]
+]
+
+#slide(title: [Decentralized Multi-Repository Git])[
+  #side-by-side(columns: (1fr, 2fr))[
+    ```bash
+    # fetch changes from remote
+    git fetch origin
+    ```
+  ][
+    #image("./img/remote-branches-3.png")
+  ]
+]
+
+#slide(title: [Decentralized Multi-Repository Git])[
+  #side-by-side(columns: (1fr, 2fr))[
+    ```bash
+    # local merge
+    git merge origin/master
+    ```
+  ][
+    #image("./img/remote-branches-4.png")
+  ]
+]
+
+#slide(title: [Decentralized Multi-Repository Git])[
+  #side-by-side(columns: (1fr, 2fr))[
+    ```bash
+    # push changes to remote
+    git push origin
+    ```
+  ][
+    #image("./img/remote-branches-5.png")
+  ]
+]
+
+#accent-focus-slide()[
+  = Live Demo !
+    - Repositories for Everyone
+]
