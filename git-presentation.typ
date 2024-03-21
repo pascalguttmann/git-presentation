@@ -127,16 +127,13 @@
   ]
 ]
 
-#slide(title: [Commits and Snapshots])[
+#slide(title: [Commits])[
   #side-by-side(columns: (1fr, 2fr))[
     #def-block[
       = Commit \
-        - "Collection of Snapshots"
-    ]
-    #def-block[
-      = Snapshot \
-        - "State of a file"
-        - logical child element of `commit`
+        - "Version" of files in repo
+        - Stores `snapshot` of files
+        - *No* "delta"
     ]
   ][
     #image(".\img\snapshots.png")
