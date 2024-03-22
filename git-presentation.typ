@@ -431,6 +431,40 @@
     - Creating a Pull Request
 ]
 
+#slide(title: [Force Pushing])[
+  #side-by-side[
+    - Rewriting history is kind of lying...
+      Don't do that. At least try to do it locally. (Squashing, etc)
+    - Force pushing is rewriting history on the remote. This will typically
+      cause a lot of confusion. Don't do that. #footnote[Conditions apply: Sensitive data
+      committed, etc.]
+  ][
+    #align(center)[
+      #image("./img/meme-force-push.jpg")
+    ]
+  ]
+]
+
+#slide(title: [Data Recovery & Sensitive Information], new-section: [Don't Do])[
+  - When data #text(red)[*is committed*], it is very hard to completely loose it.
+    #footnote[Advanced rescue strategies might be needed.]
+  - Do not commit sensitive or personal data. If it happens:
+    - remove it yourself
+    - ask your administrator for help
+]
+
+#slide(title: [Binary Data])[
+  - Git itself *can* easily store and merge binary data
+    - If not compressible the repository size might increase #footnote[Solution:
+      Git Large File System (Git LFS)]
+    - Merge conflicts *must* be resolved by you! That is very hard for binary
+      data. #footnote[External Diff and Mergetools can by utilized if necessary]
+]
+
+#accent-focus-slide[
+  = Installation & Setup
+]
+
 #slide(title: [Installing Git], new-section: [Installation & Setup])[
   #def-block[
     Installation Help:\
