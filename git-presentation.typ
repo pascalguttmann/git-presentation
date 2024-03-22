@@ -108,6 +108,26 @@
   = Git
   - local
   - distributed
+  - command line interface
+]
+
+#slide(title: [Command Line Interface? Really!?])[
+  #side-by-side(columns: (1fr, 1fr))[
+  There are graphical user interfaces. Choose what you like:
+    - https://git-scm.com/downloads/guis
+
+  Git is also integrated in many IDEs:
+      - eg. Visual Studio Code #footnote[
+        https://code.visualstudio.com/
+      ] #footnote[
+        https://code.visualstudio.com/docs/sourcecontrol/intro-to-git
+      ]
+        - recommendation: extension: `GitGraph`
+    ][
+      #align(center)[
+        #image("./img/gui-sourcetree.png")
+      ]
+    ]
 ]
 
 #slide(title: [Repository], new-section: [Git Basics])[
