@@ -393,3 +393,14 @@
     ]
   ]
 ]
+
+#slide(title: [Code Owners])[
+  #side-by-side(columns: (1fr, 2fr))[
+    - define owners of file
+    - file change: approval of codeowner required
+  ][
+    #align(center)[
+      #image("./img/codeowners.png")
+    ]
+  ]
+]
