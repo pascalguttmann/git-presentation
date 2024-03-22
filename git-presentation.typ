@@ -439,6 +439,7 @@
   git config --global core.editor notepad
 
   # for comfort
+  git config --global push.default current
   git config --global push.autoSetupRemote true
   git config --global push.followtags=true
   ```
