@@ -553,3 +553,14 @@
   If "authenticity cannot be established, are you sure you want to continue?"
   Type `yes` and hit enter.
 ]
+
+#slide(title: [Getting Help])[
+  #def-block[
+    = Getting Help\
+    1. https://git-scm.com/book/en/v2
+    2. ```bash git <command> --help # by default opens online help```
+    3. https://docs.github.com/en/get-started/start-your-journey
+    4. ```bash git help # show commandline help```
+    5. https://training.github.com/downloads/github-git-cheat-sheet.pdf
+  ]
+]
