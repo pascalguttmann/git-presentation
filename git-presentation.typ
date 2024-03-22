@@ -404,3 +404,130 @@
     ]
   ]
 ]
+
+#accent-focus-slide()[
+  = Live Demo !
+    - GitHub Website
+    - Creating a Pull Request
+]
+
+#slide(title: [Installing Git], new-section: [Installation & Setup])[
+  #def-block[
+    Installation Help:\
+    https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+  ]
+
+  On Linux (using `apt`):
+  ```bash
+  sudo apt install git-all
+  ```
+
+  On Windows:\
+  https://git-scm.com/download/win
+
+  On Mac OS:\
+  https://git-scm.com/download/mac
+]
+
+#slide(title: [Configuration])[
+  ```bash
+  # setup identity
+  git config --global user.name "Max Mustermann"
+  git config --global user.email max@domain.de
+
+  # avoid hassle exiting vim
+  git config --global core.editor notepad
+
+  # for comfort
+  git config --global push.autoSetupRemote true
+  git config --global push.followtags=true
+  ```
+]
+
+#slide(title: [Configuration])[
+  ```bash
+  # use ssh for GitHub (avoid passwords -> ssh keypair)
+  git config --global url.ssh://git@github.com/.insteadof=https://github.com/
+
+  # alias `git lg` to print a fancy log
+  git config --global alias.lg=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -  %C(bold cyan)%ah%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  ```
+]
+
+#slide(title: [Setting up GitHub])[
+  1. Sign up at: (Select free plan)\
+  https://github.com/
+
+  2. Sign into your newly created account:\
+  https://github.com/login
+
+  3. Generate ssh key:\
+  https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+]
+
+#slide(title: [Setting up GitHub])[
+  4. Set up ssh keys:\
+  https://docs.github.com/de/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+  5. Test the authentication:\
+  https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection
+]
+
+#slide(title: [Setting up GitHub])[
+  = Generate SSH key
+  Start `Git Bash`
+  Run command:
+  ```bash
+  ssh-keygen -t rsa -b 4096 -C "same_email_as_github@example.com"
+  ```
+  If prompted for file path: Specify or use default with enter.
+  If prompted passphrase: Hit enter. (Confirm: enter again).
+  #align(center)[
+    #image("./img/generate-ssh-key.png")
+  ]
+]
+
+#slide(title: [Setting up GitHub])[
+  #align(center)[
+    #image("./img/ssh-key-copy.png")
+  ]
+]
+
+#slide(title: [Setting up GitHub])[
+  = Set up SSH key in GitHub
+    1. Settings
+    2. SSH and GPG Keys
+    3. New SSH key
+    4. Give name to key
+    5. Paste public SSH key
+    6. Confirm
+]
+
+#slide(title: [Setting up GitHub])[
+  #side-by-side(columns: (1fr, 2fr))[
+    #align(center)[
+      #image("./img/github-sidebar.png")
+    ]
+  ][
+    #align(center)[
+      #image("./img/github-ssh-setting.png")
+    ]
+  ]
+]
+
+#slide(title: [Setting up GitHub])[
+  #align(center)[
+    #image("./img/github-ssh-paste.png")
+  ]
+]
+
+
+#slide(title: [Setting up GitHub])[
+  = Test the authentication
+  ```bash
+  ssh -T git@github.com
+  ```
+
+  If "authenticity cannot be established, are you sure you want to continue?"
+  Type `yes` and hit enter.
+]
