@@ -441,17 +441,18 @@
   # for comfort
   git config --global push.default current
   git config --global push.autoSetupRemote true
-  git config --global push.followtags=true
+  git config --global push.followtags true
   ```
 ]
 
 #slide(title: [Configuration])[
   ```bash
   # use ssh for GitHub (avoid passwords -> ssh keypair)
-  git config --global url.ssh://git@github.com/.insteadof=https://github.com/
+  git config --global url.ssh://git@github.com/.insteadof https://github.com/
+
 
   # alias `git lg` to print a fancy log
-  git config --global alias.lg=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -  %C(bold cyan)%ah%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  git config --global alias.lg log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) -  %C(bold cyan)%ah%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
   ```
 ]
 
