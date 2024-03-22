@@ -530,7 +530,7 @@
 ]
 
 #slide(title: [Setting up GitHub])[
-  = Generate SSH key
+  == Generate SSH key
   Start `Git Bash`
   Run command:
   ```bash
@@ -550,7 +550,7 @@
 ]
 
 #slide(title: [Setting up GitHub])[
-  = Set up SSH key in GitHub
+  == Set up SSH key in GitHub
     1. Settings
     2. SSH and GPG Keys
     3. New SSH key
@@ -579,7 +579,7 @@
 
 
 #slide(title: [Setting up GitHub])[
-  = Test the authentication
+  == Test the authentication
   ```bash
   ssh -T git@github.com
   ```
