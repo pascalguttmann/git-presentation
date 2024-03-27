@@ -264,17 +264,6 @@
   ]
 ]
 
-#slide(title: [Branching])[
-  #side-by-side(columns: (1fr, 2fr))[
-    ```bash
-    # commit to branch master
-    git commit -a -m "My other changes"
-    ```
-  ][
-    #image("./img/advance-master.png")
-  ]
-]
-
 #accent-focus-slide()[
   = Live Demo !
     - More Poems and Code
